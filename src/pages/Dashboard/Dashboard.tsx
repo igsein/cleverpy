@@ -13,9 +13,7 @@ const Dashboard = () => {
   const [email, setEmail] = useState<string>("");
   
   useEffect(() => {
-    let { role, email }: IDashboard = JSON.parse(
-      localStorage.getItem("roles") || ""
-    );
+    let { role, email }: IDashboard = JSON.parse( localStorage.getItem("roles") || "" );
     dispatch(showNavbar(true));
     setName(role);
     setEmail(email);

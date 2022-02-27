@@ -31,12 +31,12 @@ const Cards = () => {
   }, []);
 
   const pagination = (action: string) => {
-    if (action == "next") {
+    if (action === "next") {
       if (nextPage < posts.length) {
         setPreviousPage(nextPage - 4);
         setNextPage(nextPage + 4);
       }
-    } else if (action == "back") {
+    } else if (action === "back") {
       if (previousPage > 0) {
         setPreviousPage(previousPage - 4);
         setNextPage(previousPage + 4);

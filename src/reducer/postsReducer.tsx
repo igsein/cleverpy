@@ -2,9 +2,9 @@ import {  GET_ALL_POSTS,   DELETE_POST, SEARCH_BY_AUTHOR, EDIT_POST,  UPDATE_POS
 import { IPostsEstructure } from "../interfaces/interfaces";
 import { ActionPosts } from "../types/ActionsTypes";
 import { IInitialState } from "../interfaces/interfaces";
-import { firstState } from "../store/globalState";
+import { globalState } from '../store/globalState';
 
-export default function postsReducer( state: IInitialState = firstState,   action: ActionPosts) {
+export default function postsReducer( state: IInitialState = globalState,   action: ActionPosts) {
   switch (action.type) {
     case SEARCH_BY_AUTHOR:
       return {

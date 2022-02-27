@@ -1,12 +1,9 @@
-import { ILogin } from "../interfaces/interfaces";
+ 
+export const globalState = {
 
-export const firstState = {
   array: [],
   editPost: [],
   arrayBackup: [],
- };
-
-export const secondState: ILogin = {
   roles: {
     role: "Admin",
     email: "admin@admin.com",
@@ -20,8 +17,6 @@ export const secondState: ILogin = {
       pass: "0",
     },
   },
-};
-
-export const thirdState = {
   show: false,
-};
+
+}

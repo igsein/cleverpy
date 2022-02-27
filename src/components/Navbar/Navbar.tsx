@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      {renderMenuBurger == true ? (
+      {renderMenuBurger === true ? (
         <MenuBurger show={true} setRenderMenuBurger={setRenderMenuBurger}  logout={logout}/>
       ) : (
         ""

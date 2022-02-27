@@ -12,7 +12,7 @@ const SearchByAuthor = () => {
 
   return (
     <div className="container-search-by-author">
-      {showSearch == true ? (
+      {showSearch === true ? (
         <>
           <h4>Búsqueda por Id de Autor:</h4>
           <input
@@ -35,7 +35,7 @@ const SearchByAuthor = () => {
       ) : (
         ""
       )}
-      {showAllPosts == true ? (
+      {showAllPosts === true ? (
         <button
           className="button-red"
           onClick={() => {

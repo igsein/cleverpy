@@ -3,7 +3,7 @@ import { IpropsMessage } from "../../interfaces/interfaces";
 import "./Message.scss";
 
 const Message = (props: IpropsMessage) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState<boolean>(true);
 
   useEffect(() => {
     setShow(props.show);

@@ -1,8 +1,9 @@
  @import "../../../Sass/_querys";
+ @import "../../../Sass/colors";
 .Message {
   width: 85%;
   margin-left: 5%;
-  background-color: red;
+  background-color:  $color-message-background;
   color: white;
   padding: 2%;
 

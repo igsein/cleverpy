@@ -1,12 +1,13 @@
 @import "../../../Sass/_querys";
+@import "../../../Sass/colors";
 .Pagination{
  
     display: flex;
     justify-content: center;
     >button{
         color: white;
-        background-color: green;
-        border: forestgreen 2px solid;
+        background-color:  $color-pagination-buttons;
+        border:  $color-pagination-buttons-border;
         margin: 2%;
         padding: 3%;
         
