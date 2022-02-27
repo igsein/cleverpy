@@ -1,0 +1,25 @@
+@import "../../../Sass/_querys";
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  margin-bottom: 5%;
+  padding: 5%;
+  height: 100vh;
+}
+
+.container-dashboard {
+  width: 80%;
+  border: solid 1px #e0e0e0;
+  padding: 5%;
+  @include desktop {
+    width: 20%;
+  }
+}
+.info-user-dashboard {
+  > img {
+    width: 25%;
+    margin-left: 37.5%;
+  }
+}

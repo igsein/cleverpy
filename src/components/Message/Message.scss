@@ -1,0 +1,31 @@
+ @import "../../../Sass/_querys";
+.Message {
+  width: 85%;
+  margin-left: 5%;
+  background-color: red;
+  color: white;
+  padding: 2%;
+
+  text-align: center;
+
+  margin-top: 30%;
+
+  @include desktop {
+    margin-top: 0%;
+  }
+}
+
+@keyframes Message {
+  0% {
+    transform: translateY(1050px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 100%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}

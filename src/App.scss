@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+@import "../Sass/_querys";
+body{
+ 
+ @include desktop{
+width: 75%;
+margin-left: 12.5%;
+margin-right: 12.5%;
+ background-color: rgb(245, 245, 245);
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Raleway', sans-serif;
+ font-family: 'Roboto', sans-serif;
+
+ }
+}
+
+input {
+    padding: 3%;
+    margin: 2%;
+  }
+.button-red {
+    margin: 2%;
+     padding: 5%;
+    background-color: red;
+    border-color: rgba(255, 0, 0, 0.699);
+    color: white;
+  }
+.show{
+  display: block;
+}
+input{
+ 
+  border: #dadada 1px solid;
+}
+.shadow-div{
+  border: 1px solid rgb(253, 253, 253) ;
+  -webkit-box-shadow: 0px 1px 16px 5px #f5f5f5; 
+ box-shadow: 0px 1px 16px 5px #ececec;
+}
+  
+.slide-in-bottom{animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
+.slide-bottom{animation:slide-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
+.swing-in-top-fwd{animation:swing-in-top-fwd 2s cubic-bezier(.175,.885,.32,1.275) both}
+ 
+@keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+@keyframes swing-in-top-fwd{0%{transform:rotateX(-100deg);transform-origin:top;opacity:0}100%{transform:rotateX(0deg);transform-origin:top;opacity:1}}  
+@keyframes slide-bottom{0%{transform:translateY(0)}100%{transform:translateY(60px)}}

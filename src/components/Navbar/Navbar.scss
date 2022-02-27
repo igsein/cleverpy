@@ -1,0 +1,86 @@
+@import "../../../Sass/_querys";
+.Navbar {
+  color: white;
+  padding: 0.1%;
+}
+
+.Navbar-container {
+  background-color: rgb(0, 0, 0);
+  padding: 5%;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  @include desktop {
+    padding: 0.2%;
+  }
+}
+.ul-navbar {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1rem;
+
+  > li {
+    color: white;
+  }
+  > li:hover {
+    color: rgb(255, 255, 255);
+    animation: vibrate-1 0.3s linear both;
+  }
+}
+
+.no-hover {
+  color: rgb(255, 255, 255);
+  > img {
+    width: 5%;
+  }
+}
+.no-hover:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.brand-logo {
+  display: flex;
+  width: 50%;
+
+  @include desktop {
+    padding: 2%;
+    margin-left: 10%;
+    width: 12%;
+  }
+}
+
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  display: none;
+  @include desktop {
+    display: block;
+  }
+  > .ul-navbar {
+    width: 90%;
+  }
+  > .icon-navbar {
+    padding-top: 2%;
+
+    width: 5%;
+    > img {
+      width: 100%;
+      padding-right: 5%;
+    }
+  }
+}
+.menu-burger-icon-container {
+  @include desktop {
+    display: none;
+  }
+
+  > img {
+    display: flex;
+    margin-left: 70%;
+    width: 25%;
+  }
+}
